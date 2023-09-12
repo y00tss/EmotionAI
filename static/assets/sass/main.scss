@@ -313,46 +313,6 @@
 		margin: 2.5em 0 0 0;
 	}
 
-/* Image */
-
-	.image {
-		position: relative;
-		display: inline-block;
-		border: 0;
-		outline: 0;
-
-		img {
-			display: block;
-			width: 100%;
-		}
-
-		&.fit {
-			display: block;
-			width: 100%;
-		}
-
-		&.featured {
-			display: block;
-			width: 100%;
-			margin: 0 0 4em 0;
-		}
-
-		&.left {
-			float: left;
-			margin: 0 2em 2em 0;
-		}
-
-		&.centered {
-			display: block;
-			margin: 0 0 2em 0;
-
-			img {
-				margin: 0 auto;
-				width: auto;
-			}
-		}
-	}
-
 
 /* Actions */
 
@@ -403,39 +363,6 @@
 		}
 	}
 
-/* Icons */
-
-	ul.icons {
-		position: relative;
-		background: rgba(128, 128, 128, 0.05);
-		border-radius: 4em;
-		display: inline-block;
-		padding: 0.35em 0.75em 0.35em 0.75em;
-		font-size: 1.25em;
-		cursor: default;
-		list-style: none;
-
-		li {
-			display: inline-block;
-			padding-left: 0;
-
-			a {
-				display: inline-block;
-				background: none;
-				width: 2.5em;
-				height: 2.5em;
-				line-height: 2.5em;
-				text-align: center;
-				border-radius: 100%;
-				border: 0;
-				color: inherit;
-
-				&:hover {
-					color: #ef8376;
-				}
-			}
-		}
-	}
 
 /* Button */
 
@@ -471,52 +398,6 @@
 			}
 		}
 	}
-
-/* Icons */
-
-	.icon {
-		@include icon;
-		text-decoration: none;
-
-		&:before {
-			line-height: inherit;
-			font-size: 1.25em;
-		}
-
-		> .label {
-			display: none;
-		}
-
-		&.solid {
-			&:before {
-				font-weight: 900;
-			}
-		}
-
-		&.brands {
-			&:before {
-				font-family: 'Font Awesome 5 Brands';
-			}
-		}
-
-		&.circled {
-			position: relative;
-			display: inline-block;
-			background: #2b252c;
-			color: #fff;
-			border-radius: 100%;
-			width: 3em;
-			height: 3em;
-			line-height: 3em;
-			text-align: center;
-			font-size: 1.25em;
-
-			header & {
-				margin: 0 0 2em 0;
-			}
-		}
-	}
-
 
 /* Header */
 
@@ -691,22 +572,6 @@
 				> ul {
 					display: none;
 				}
-			}
-		}
-	}
-
-
-/* Banner */
-
-	#banner {
-		background: #fff;
-		text-align: center;
-		padding: 4.5em 0 4.5em 0;
-		margin-bottom: 0;
-
-		header {
-			> p {
-				margin-bottom: 0;
 			}
 		}
 	}
@@ -922,22 +787,6 @@
 				}
 			}
 
-		/* Image */
-
-			.image {
-				&.featured {
-					margin: 0 0 2em 0;
-				}
-
-				&.left {
-					margin: 0 1em 1em 0;
-				}
-
-				&.centered {
-					margin: 0 0 1em 0;
-				}
-			}
-
 		/* Actions */
 
 			ul.actions {
@@ -973,18 +822,6 @@
 				}
 			}
 
-		/* Icons */
-
-			ul.icons {
-				font-size: 1em;
-				padding: 0.35em 0.5em 0.35em 0.5em;
-
-				li {
-					a {
-						width: 2.25em;
-					}
-				}
-			}
 
 		/* Button */
 
@@ -1029,7 +866,7 @@
 					outline: 0;
 
 					&:before {
-						
+
 						text-decoration: none;
 						font-style: normal;
 						content: '\f0c9';
@@ -1145,12 +982,6 @@
 				}
 			}
 
-		/* Wrapper */
-
-			.wrapper {
-				padding: 3em 1em 3em 1em;
-			}
-
 		/* Header */
 
 			#header {
@@ -1201,12 +1032,6 @@
 				display: none;
 			}
 
-		/* Banner */
-
-			#banner {
-				padding: 3em 2em 3em 2em;
-			}
-
 		/* Sidebar */
 
 			#sidebar {
@@ -1220,33 +1045,6 @@
 			#main {
 				> header {
 					text-align: center;
-				}
-			}
-
-		/* Footer */
-
-			#footer {
-				padding-left: 1em;
-				padding-right: 1em;
-			}
-
-		/* Carousel */
-
-			.carousel {
-				padding: 0.5em 0 0.5em 0;
-
-				.reel {
-					padding: 0 0.5em 0 0.5em;
-				}
-
-				article {
-					width: 14em;
-					padding-bottom: 2em;
-					margin: 0 0.5em 0 0;
-
-					.image {
-						margin-bottom: 2em;
-					}
 				}
 			}
 

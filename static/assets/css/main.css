@@ -305,47 +305,6 @@ input, select, textarea {
 		margin: 2.5em 0 0 0;
 	}
 
-/* Image */
-
-	.image {
-		position: relative;
-		display: inline-block;
-		border: 0;
-		outline: 0;
-	}
-
-		.image img {
-			display: block;
-			width: 100%;
-		}
-
-		.image.fit {
-			display: block;
-			width: 100%;
-		}
-
-		.image.featured {
-			display: block;
-			width: 100%;
-			margin: 0 0 4em 0;
-		}
-
-		.image.left {
-			float: left;
-			margin: 0 2em 2em 0;
-		}
-
-		.image.centered {
-			display: block;
-			margin: 0 0 2em 0;
-		}
-
-			.image.centered img {
-				margin: 0 auto;
-				width: auto;
-			}
-
-
 /* Menu */
 
 	ul.menu {
@@ -495,60 +454,6 @@ input, select, textarea {
 		.post.stub header {
 			margin: 0;
 		}
-
-/* Icons */
-
-	.icon {
-		text-decoration: none;
-		text-decoration: none;
-	}
-
-		.icon:before {
-			-moz-osx-font-smoothing: grayscale;
-			-webkit-font-smoothing: antialiased;
-			display: inline-block;
-			font-style: normal;
-			font-variant: normal;
-			text-rendering: auto;
-			line-height: 1;
-			text-transform: none !important;
-			font-family: 'Font Awesome 5 Free';
-			font-weight: 400;
-		}
-
-		.icon:before {
-			line-height: inherit;
-			font-size: 1.25em;
-		}
-
-		.icon > .label {
-			display: none;
-		}
-
-		.icon.solid:before {
-			font-weight: 900;
-		}
-
-		.icon.brands:before {
-			font-family: 'Font Awesome 5 Brands';
-		}
-
-		.icon.circled {
-			position: relative;
-			display: inline-block;
-			background: #2b252c;
-			color: #fff;
-			border-radius: 100%;
-			width: 3em;
-			height: 3em;
-			line-height: 3em;
-			text-align: center;
-			font-size: 1.25em;
-		}
-
-			header .icon.circled {
-				margin: 0 0 2em 0;
-			}
 
 /* Header */
 
@@ -730,19 +635,6 @@ input, select, textarea {
 					display: none;
 				}
 
-/* Banner */
-
-	#banner {
-		background: #fff;
-		text-align: center;
-		padding: 4.5em 0 4.5em 0;
-		margin-bottom: 0;
-	}
-
-		#banner header > p {
-			margin-bottom: 0;
-		}
-
 /* Content */
 
 	#content > hr {
@@ -779,33 +671,6 @@ input, select, textarea {
 			padding-top: 2em;
 		}
 
-/* Wide */
-
-	@media screen and (max-width: 1680px) {
-
-		/* Basic */
-
-			body, input, textarea, select {
-				font-size: 14pt;
-				line-height: 1.75em;
-			}
-
-		/* Carousel */
-
-			.carousel {
-				padding: 1.5em 0 1.5em 0;
-			}
-
-				.carousel .reel {
-					padding: 0 1.5em 0 1.5em;
-				}
-
-				.carousel article {
-					width: 18em;
-					margin: 0 1.25em 0 0;
-				}
-
-	}
 
 /* Normal */
 
@@ -835,20 +700,6 @@ input, select, textarea {
 					padding-left: 2em;
 					padding-right: 2em;
 				}
-
-		/* Banner */
-
-			#banner {
-				padding-left: 2em;
-				padding-right: 2em;
-			}
-
-		/* Footer */
-
-			#footer {
-				padding-left: 2em;
-				padding-right: 2em;
-			}
 
 	}
 
@@ -880,16 +731,6 @@ input, select, textarea {
 				padding: 4em 2em 4em 2em;
 			}
 
-		/* Carousel */
-
-			.carousel {
-				padding: 1.25em 0 1.25em 0;
-			}
-
-				.carousel article {
-					width: 18em;
-					margin: 0 1em 0 0;
-				}
 
 	}
 
@@ -943,20 +784,6 @@ input, select, textarea {
 				font-size: 1.25em;
 			}
 
-		/* Image */
-
-			.image.featured {
-				margin: 0 0 2em 0;
-			}
-
-			.image.left {
-				margin: 0 1em 1em 0;
-			}
-
-			.image.centered {
-				margin: 0 0 1em 0;
-			}
-
 		/* Actions */
 
 			form ul.actions {
@@ -990,16 +817,6 @@ input, select, textarea {
 						padding-top: 0;
 					}
 
-		/* Icons */
-
-			ul.icons {
-				font-size: 1em;
-				padding: 0.35em 0.5em 0.35em 0.5em;
-			}
-
-				ul.icons li a {
-					width: 2.25em;
-				}
 
 		/* Button */
 
@@ -1198,12 +1015,6 @@ input, select, textarea {
 				transform: translateY(0);
 			}
 
-		/* Wrapper */
-
-			.wrapper {
-				padding: 3em 1em 3em 1em;
-			}
-
 		/* Header */
 
 			#header {
@@ -1250,12 +1061,6 @@ input, select, textarea {
 				display: none;
 			}
 
-		/* Banner */
-
-			#banner {
-				padding: 3em 2em 3em 2em;
-			}
-
 		/* Sidebar */
 
 			#sidebar > hr:first-of-type {
@@ -1267,32 +1072,5 @@ input, select, textarea {
 			#main > header {
 				text-align: center;
 			}
-
-		/* Footer */
-
-			#footer {
-				padding-left: 1em;
-				padding-right: 1em;
-			}
-
-		/* Carousel */
-
-			.carousel {
-				padding: 0.5em 0 0.5em 0;
-			}
-
-				.carousel .reel {
-					padding: 0 0.5em 0 0.5em;
-				}
-
-				.carousel article {
-					width: 14em;
-					padding-bottom: 2em;
-					margin: 0 0.5em 0 0;
-				}
-
-					.carousel article .image {
-						margin-bottom: 2em;
-					}
 
 	}
