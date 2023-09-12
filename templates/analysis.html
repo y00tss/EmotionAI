@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>{{ title }}</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
+		<noscript><link rel="stylesheet" href="{{ url_for('static', filename='assets/css/noscript.css') }}" /></noscript>
+	</head>
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Inner -->
+						<div class="inner">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-8  offset-lg-2">
+                                        <img src="{{ url_for('video_feed') }}" width="55%">
+                                        <p></p>
+                                        <form method="POST" action="{{ url_for('about') }}">
+                                            <input type="submit" value="Stop Analysis" name="stop">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+						</div>
+					<!-- Nav -->
+                    <nav id="nav">
+                        {% extends 'constant_bar.html' %}
+                    </nav>
+				</div>
+		</div>
+	</body>
+</html>

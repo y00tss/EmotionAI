@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>{{ title }}</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
+		<noscript><link rel="stylesheet" href="{{ url_for('static', filename='assets/css/noscript.css') }}" /></noscript>
+	</head>
+	<body class="homepage is-preload">
+
+
+			<!-- Header -->
+				<div id="header">
+					<!-- Inner -->
+                        <div class="inner">
+							<header>
+								<h1 id="logo">Emotion AI</h1>
+							</header>
+                            <article>
+                                <header>
+                                    <h3><a href="">Description of project</a></h3>
+                                </header>
+                                <p>This web app based on Flask framework</p>
+                                <p>Technologies: OpenCV, DeepFace</p>
+                                <header>
+                                </header>
+                                <p>Frontend: HTML, CSS, JS</p>
+                                <p>Backend: Flask</p>
+
+                            </article>
+
+                        </div>
+					<!-- Nav -->
+                    <nav id="nav">
+                        {% extends 'constant_bar.html' %}
+                    </nav>
+				</div>
+
+	</body>
+</html>
